@@ -1,19 +1,22 @@
 {
-  "name": "bloc-frontend-project-starter",
+  "name": "blocchat",
   "version": "0.0.2",
-  "description": "Starter project for the Bloc Frontend Web Development",
+  "description": "realtime chat app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bloc/bloc-frontend-project-starter"
+    "url": "https://github.com/sguerrero1971/blocchat"
   },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Bloc Inc",
+  "author": "SG",
   "license": "ISC",
   "dependencies": {
+    "angularfire": "^2.3.0",
+    "firebase": "^3.9.0",
     "hapi": "~7.5.0",
+    "install": "^0.10.1",
     "path": "^0.4.9"
   },
   "devDependencies": {
