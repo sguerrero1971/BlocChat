@@ -3,15 +3,15 @@
  */
 (function() {
     function Room($firebaseArray) {
-        var ref = firebase.database().ref();
-        var rooms = $firebaseArray(ref.child('rooms'));
+        var ref = firebase.database().ref().child('rooms');
+        var rooms = $firebaseArray(ref);
         var addRoom = function () {
-            rooms.$add({name: 'rooms' + (rooms.length + 1)})
+            rooms.$add('rooms' + (rooms.length + 1))
         };
 
         return {
-            all: rooms
-
+            all: rooms,
+            addRoom
         };
     }
 
