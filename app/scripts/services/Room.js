@@ -6,7 +6,7 @@
         var ref = firebase.database().ref();
         var rooms = $firebaseArray(ref.child('rooms'));
         var addRoom = function () {
-            rooms.$add('rooms' + (rooms.length + 1))
+            rooms.$add({name: 'rooms' + (rooms.length + 1)})
         };
 
         return {
