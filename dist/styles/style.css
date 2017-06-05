@@ -1,0 +1,10 @@
+.rooms {
+    position: relative;
+    left: 0px;
+}
+
+.message {
+    position: absolute;
+    right: 0px;
+    background-color: lightgray;
+}
